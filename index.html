@@ -3,58 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minjae Kang | Portfolio</title>
+    <title>Minjae Kang - Portfolio</title>
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <a href="#education">Education</a>
-        <a href="#experience">Experience</a>
-        <a href="#publications">Publications</a>
-        <a href="#scholarships">Scholarships</a>
-    </nav>
-    <div class="container">
-        <header>
-            <img src="assets/profile.png" alt="Profile photo" class="profile">
-            <div class="header-text">
-                <h1>Minjae Kang</h1>
-                <p>Ph.D. Student</p>
-            </div>
+    <header class="site-header">
+        <nav class="navbar">
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#publications">Publications</a>
+            <a href="#scholarships">Scholarships</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-    <div class="container">
-        <header>
-            <img src="assets/profile.png" alt="Profile photo" class="profile">
-            <h1>Minjae Kang</h1>
-            <p>Ph.D. Student</p>
-        </header>
+    <main class="container">
+        <section id="about" class="hero">
+            <img src="assets/profile.jpg" alt="Profile photo" class="profile">
+            <div class="hero-text">
+                <h1>Minjae Kang</h1>
+                <p>Master's student in Computer Science and Engineering</p>
+                <p>Passionate about scalable systems and cloud computing.</p>
+            </div>
+        </section>
         <section id="education">
             <h2>Education</h2>
             <ul>
-                <li>Ph.D. Candidate, Example University, 2023 - Present</li>
-                <li>B.S. in Example Major, Example University, 2023</li>
+                <li>M.S. in Computer Science and Engineering, Korea University, 2024 - Present</li>
+                <li>B.S. in Political Science and International Relations & Computer Science and Engineering (Double Major), Korea University, 2024</li>
             </ul>
         </section>
         <section id="experience">
             <h2>Experience</h2>
             <ul>
-                <li>Intern, Example Company (2 months)</li>
+                <li>Research Intern, Labrador Labs, July 2024 - August 2024</li>
             </ul>
         </section>
         <section id="publications">
             <h2>Publications</h2>
             <ul>
-                <li>"Sample Paper", Example Journal, 2025</li>
+                <li>강민재, 김형준, 유헌창, “확장가능한 시스템 설계를 위한 쿠버네티스 컨테이너 런타임별 웹애플리케이션 성능 분석”, 한국정보처리학회 학술대회논문집, 2023.</li>
+                <li>강민재, 김동균, 유헌창, “서버리스 환경에서 베이지안 최적화 기반의 비용 효율적 자원 할당 기법”, 한국정보과학회 학술발표논문집, 2024.</li>
+                <li>Min Chang Kim, Minjae Kang, and Heonchang Yu. "An Analysis of Image Pulling Time Based on Dockerfile Optimization Using Multi-Stage Builds in Serverless Computing." Annual Conference of KIPS. Korea Information Processing Society, 2024.</li>
+                <li>Minjae Kang and Heonchang Yu. "MOBOS: Co-optimizing Cost and Execution Time in Serverless Workflow with Multi-Objective Bayesian Optimization." IEEE 18th International Conference on Cloud Computing (CLOUD), 2025</li>
             </ul>
         </section>
         <section id="scholarships">
             <h2>Scholarships & Awards</h2>
             <ul>
-                <li>Example Scholarship, 2024</li>
+                <li>Dean’s Award for Academic Excellence, Korea University, 1st Semester, August 2018</li>
+                <li>Korea University Alumni Association Scholarship, August 2018</li>
+                <li>Bang Il-Young Scholarship, Bang Il-Young Foundation, February 2019 - February 2024
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;Full scholarship covering tuition and living expenses</li>
+                <li>3rd Place Award, Undergraduate Section, Korea Information Processing Society (KIPS) Conference (2023)</li>
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;	For the paper “확장가능한 시스템 설계를 위한 쿠버네티스 컨테이너 런타임별 웹 애플리케이션 성능 분석”</li>
             </ul>
         </section>
-        <footer>
-            <p>&copy; 2025 Minjae Kang</p>
-        </footer>
-    </div>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>You can reach me at minjae9228@gmail.com</p>
+            <p>
+                <a href="https://www.linkedin.com/in/minjae-kang-843aa62a4/" target="_blank">LinkedIn</a> |
+                <a href="https://github.com/Existein" target="_blank">GitHub</a>
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Minjae Kang</p>
+    </footer>
 </body>
 </html>

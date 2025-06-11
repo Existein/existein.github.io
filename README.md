@@ -5,7 +5,7 @@ This repository contains a simple personal portfolio website. It uses a minimal 
 ## Usage
 
 1. Update the content in `index.html` with your own information.
-2. Add your profile image at `assets/profile.png` (create the `assets` folder if needed). If you use a different name, update the `<img>` tag in `index.html`.
+2. Add your profile image at `assets/profile.jpg` (create the `assets` folder if needed). If you use a different name, update the `<img>` tag in `index.html`.
 3. Customize the style in `style.css` if needed.
 4. Edit the navigation links in `index.html` to match your sections.
 
