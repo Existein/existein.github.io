@@ -25,34 +25,40 @@ body {
 
 /* Header and Navigation */
 .site-header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem 0;
+    background-color: #fff; /* Changed background to white */
+    color: #333; /* Changed text color for better contrast */
+    padding: 0.5rem 0; /* Reduced padding */
     text-align: center;
     position: sticky;
     top: 0;
     z-index: 1000;
     width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Softer shadow for sophistication */
 }
 
 .navbar {
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 960px; /* Align with .container */
+    margin: 0 auto;    /* Center the navbar */
+    padding: 0.5rem 1rem; /* Added some padding inside navbar */
 }
 
 .navbar a {
-    color: #fff;
+    color: #333; /* Changed link color */
     text-decoration: none;
-    padding: 0.5rem 1rem;
-    margin: 0 0.5rem;
+    padding: 0.75rem 1.25rem; /* Adjusted padding for a more spacious feel */
+    margin: 0 0.25rem; /* Reduced margin between links slightly */
     border-radius: 4px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Added color transition */
+    font-weight: 500; /* Slightly bolder font */
 }
 
 .navbar a:hover,
-.navbar a.active {
-    background-color: #555;
+.navbar a.active { /* Assuming you might add an 'active' class via JS later */
+    background-color: #007bff; /* Primary accent color on hover */
+    color: #fff; /* White text on hover */
 }
 
 /* Hero Section */
