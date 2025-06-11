@@ -89,6 +89,16 @@ body {
     color: #333;
 }
 
+.hero-text p a {
+    color: #007bff; /* Theme color for email link */
+    text-decoration: none;
+}
+
+.hero-text p a:hover {
+    color: #0056b3; /* Darker theme color on hover */
+    text-decoration: underline;
+}
+
 .social-icons {
     margin-bottom: 1rem; /* Space below icons */
 }
