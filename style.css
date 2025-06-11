@@ -164,14 +164,20 @@ ul li {
     border-left: 3px solid #007bff; /* Accent border for list items */
 }
 
-ul li br {
-    display: none; /* Hide <br> tags used for spacing */
-}
-ul li br + * { /* Style text after a <br> tag if needed, e.g., for indentation */
-    display: block;
-    margin-left: 20px; /* Indent sub-text */
+.list-item-detail {
+    display: block; /* Ensures it takes its own line */
+    margin-left: 20px; /* Indentation for sub-items */
     font-size: 0.9em;
     color: #555;
+    margin-top: 5px; /* Adds a little space above the detail */
+}
+
+.education-detail { /* Specific styling for education details if needed, otherwise covered by list-item-detail */
+    display: block;
+    margin-left: 20px;
+    font-size: 0.9em; /* Adjusted from inline style to CSS */
+    color: #555;
+    margin-top: 5px;
 }
 
 
