@@ -1,62 +1,113 @@
+/* General Body Styles */
 body {
-    font-family: Arial, sans-serif;
-    background: #fff;
-    color: #000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
+/* Container for consistent padding and max-width */
+.container {
+    width: 80%;
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    flex-grow: 1;
+}
 
+/* Header and Navigation */
+.site-header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
 
 .navbar {
-    background: #000;
-    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .navbar a {
     color: #fff;
-    margin-right: 15px;
     text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
 }
 
-
-.container {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-    text-align: left;
+.navbar a:hover,
+.navbar a.active {
+    background-color: #555;
 }
 
-header {
+/* Hero Section */
+.hero {
     display: flex;
     align-items: center;
-    gap: 20px;
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: #e9ecef; /* Light grey background for hero */
+    border-radius: 8px;
+    margin-bottom: 30px;
     text-align: left;
 }
 
-header {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.profile {
+.hero img.profile {
     width: 150px;
     height: 150px;
     border-radius: 50%;
+    margin-right: 30px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-h1 {
-    margin: 10px 0 5px;
+.hero-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5rem;
+    color: #333;
 }
 
+.hero-text p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 0.25rem;
+}
+
+/* Section Styling */
 section {
-    margin-bottom: 25px;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
 }
 
-h2 {
-    border-bottom: 1px solid #000;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
+section:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+section h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #007bff; /* Accent color for headings */
+    display: inline-block;
 }
 
 ul {
@@ -64,12 +115,101 @@ ul {
     padding-left: 0;
 }
 
-li {
+ul li {
+    background-color: #f9f9f9;
+    padding: 10px 15px;
     margin-bottom: 8px;
+    border-radius: 4px;
+    border-left: 3px solid #007bff; /* Accent border for list items */
 }
 
+ul li br {
+    display: none; /* Hide <br> tags used for spacing */
+}
+ul li br + * { /* Style text after a <br> tag if needed, e.g., for indentation */
+    display: block;
+    margin-left: 20px; /* Indent sub-text */
+    font-size: 0.9em;
+    color: #555;
+}
+
+
+/* Contact Section Specifics */
+#contact p {
+    margin-bottom: 10px;
+}
+
+#contact a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#contact a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Footer */
 footer {
     text-align: center;
-    margin-top: 40px;
-    color: #555;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    margin-top: auto; /* Pushes footer to the bottom */
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero img.profile {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 2em;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar a {
+        margin: 0.5rem 0;
+        display: block;
+        width: calc(100% - 2rem); /* Full width with padding */
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 1.8em;
+    }
+    .hero-text p {
+        font-size: 1em;
+    }
+    section h2 {
+        font-size: 1.5em;
+    }
+}
+
+/* Scroll behavior */
+html {
+    scroll-behavior: smooth;
 }
